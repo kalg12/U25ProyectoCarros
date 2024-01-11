@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(100, 196, 234);
+}
+
+h1 {
+  color: rgb(255 111 0);
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 6px 6px 12px #000000;
+}
+
+.parrafo-introductorio {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.imagen-auto1 {
+  width: 300px;
+  height: 100%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 150px;
+  align-items: center;
+}
+
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
