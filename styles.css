@@ -2,6 +2,52 @@ body {
   background-color: rgb(100, 196, 234);
 }
 
+/* Sección de estilos para nuestro menú */
+.contenedor {
+  width: 80%;
+  margin: auto;
+}
+
+/* Estilos para el header */
+.header {
+  background-color: #0a1028;
+  color: white;
+  padding: 10px 0;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+}
+
+/* Estilos para la navegación */
+.navegacion {
+  list-style: none;
+  display: flex;
+}
+
+.navegacion a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.navegacion a:hover {
+  color: #ddd;
+}
+
+/* Sección del cuerpo o body */
+.contenedorUno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   color: rgb(255 111 0);
   font-family: "Roboto", sans-serif;
@@ -36,4 +82,47 @@ h1 {
 
 .zoom:hover {
   transform: scale(1.5);
+}
+
+/* Sección para modo responsivo */
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: rgb(238, 187, 198);
+  }
+
+  .barra {
+    flex-direction: column;
+  }
+
+  .navegacion {
+    margin-top: 20px;
+  }
+
+  .navegacion a {
+    display: flex;
+  }
+
+  .contenedorUno {
+    margin-top: 20px;
+  }
+
+  .parrafo-introductorio {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+  .imagen-auto1 {
+    width: 150px;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 150px;
+    align-items: center;
+  }
 }
