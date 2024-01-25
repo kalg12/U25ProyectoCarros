@@ -84,6 +84,31 @@ h1 {
   transform: scale(1.5);
 }
 
+.h1-galeria {
+  color: rgb(37, 43, 42);
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 6px 6px 12px #dcdada;
+}
+
+.galeria {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 8px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 /* Sección para modo responsivo */
 
 @media screen and (max-width: 768px) {
@@ -124,5 +149,21 @@ h1 {
     margin-right: 20px;
     border-radius: 150px;
     align-items: center;
+  }
+
+  .galeria {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 8px;
+  }
+
+  .galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
   }
 }
